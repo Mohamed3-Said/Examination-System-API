@@ -114,3 +114,16 @@ Features/
         ├── Validators/
         ├── Orchestrators/
         └── Response / DTOs
+
+
+## ⚙️ Engineering Patterns
+
+The project applies several backend design patterns and practices:
+
+- **CQRS** — Separating read and write operations into dedicated Queries and Commands.
+- **MediatR** — Decoupling requests from their handlers and simplifying application communication.
+- **Orchestrator Pattern** — Coordinating multiple Commands and Queries within complex business workflows.
+- **Unit of Work** — Managing database persistence and transaction boundaries across business operations.
+- **SavePoints** — Supporting partial rollback within transactions when workflows contain optional operations.
+
+These patterns help keep the business logic focused, maintainable, and easier to extend.
